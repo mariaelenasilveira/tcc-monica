@@ -1,0 +1,6 @@
+framework module Pods_MonicaTests {
+  umbrella header "Pods-MonicaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

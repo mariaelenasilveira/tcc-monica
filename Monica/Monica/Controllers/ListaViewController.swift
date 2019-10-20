@@ -10,9 +10,10 @@ import UIKit
 
 class ListaViewController: UIViewController {
 
+    @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    let listaCaixas = ["Caixa 1", "Caixa 2"]
+    let listaCaixas = ["Reservatório térreo"]
     var menuLateralAberto = false
     
     override func viewDidLoad() {
@@ -20,10 +21,15 @@ class ListaViewController: UIViewController {
         
         verificarLogin()
         
+        totalLabel.text = "Total: \(listaCaixas.count)"
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(desativarView),
                                                name: NSNotification.Name("EsconderMenuLateral"),
                                                object: nil)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewTocada))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
     @objc private func desativarView() {

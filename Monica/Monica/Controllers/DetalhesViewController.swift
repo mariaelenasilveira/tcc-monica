@@ -41,8 +41,11 @@ class DetalhesViewController: UIViewController {
     func configureUI() {
         let cor = UIColor(red: 170/255, green: 190/255, blue: 194/255, alpha: 1)
         valvulaCard.adicionarBordas(comCor: cor)
+        valvulaCard.arredondarBordas()
         statusReservatorioCard.adicionarBordas(comCor: cor)
+        statusReservatorioCard.arredondarBordas()
         detalhesCard.adicionarBordas(comCor: cor)
+        detalhesCard.arredondarBordas()
         atualizarButton.arredondarBordas()
         viewCard.isHidden = true
         activityIndicator.isHidden = false

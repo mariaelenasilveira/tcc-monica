@@ -15,16 +15,20 @@ class MenuLateralViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func deslogar(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "autenticado")
+        NotificationCenter.default.post(name: NSNotification.Name("EsconderMenuLateral"), object: nil)
+        abrirLogin()
     }
-    */
-
+    
+    func abrirLogin() {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func sobre(_ sender: Any) {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "SobreViewController") as! SobreViewController
+        self.present(viewController, animated: true, completion: nil)
+    }
 }

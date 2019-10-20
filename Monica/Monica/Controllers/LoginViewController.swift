@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var entrarButton: UIButton!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var senhaTextField: UITextField!
+    
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         entrarButton.arredondarBordas()
     }
 
@@ -22,8 +28,19 @@ class LoginViewController: UIViewController {
     }
     
     func verificarLogin(){
-        logar()
+        guard let login = usernameTextField.text else { return }
+        guard let senha = senhaTextField.text else { return }
+        ref.child("empresa1/caixa1/\(login)").observeSingleEvent(of: .value) {(snapshot) in
+            guard let valor = snapshot.value as? String else { return }
+            if valor == senha {
+                self.logar()
+            } else {
+                
+            }
+        }
     }
+    
+    
     
     func logar(){
         let configuracoesSalvas = UserDefaults.standard

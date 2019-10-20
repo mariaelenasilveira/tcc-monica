@@ -27,6 +27,7 @@
 		2DFDAD2B2359317E001E65C7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFDAD2A2359317E001E65C7 /* UIViewExtension.swift */; };
 		2DFDAD2D235A6FDA001E65C7 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFDAD2C235A6FDA001E65C7 /* ContainerViewController.swift */; };
 		2DFDAD2F235A7E85001E65C7 /* MenuLateralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFDAD2E235A7E85001E65C7 /* MenuLateralViewController.swift */; };
+		2DFDAD33235BE059001E65C7 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFDAD32235BE059001E65C7 /* SobreViewController.swift */; };
 		7CBF2107A71727202C1D233E /* Pods_Monica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5732710F1309402729F889 /* Pods_Monica.framework */; };
 		969A2AEAA221CDCE879D5D58 /* Pods_MonicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C2891114CC25C0BCF8DA60 /* Pods_MonicaTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		2DFDAD2A2359317E001E65C7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2DFDAD2C235A6FDA001E65C7 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		2DFDAD2E235A7E85001E65C7 /* MenuLateralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLateralViewController.swift; sourceTree = "<group>"; };
+		2DFDAD32235BE059001E65C7 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		777370EFD40E567BED5DF863 /* Pods-MonicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonicaTests.debug.xcconfig"; path = "Target Support Files/Pods-MonicaTests/Pods-MonicaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C2891114CC25C0BCF8DA60 /* Pods_MonicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5732710F1309402729F889 /* Pods_Monica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				2D4C8D1323552DBC0032CE2E /* ListaViewController.swift */,
 				2DFDAD2C235A6FDA001E65C7 /* ContainerViewController.swift */,
 				2DFDAD2E235A7E85001E65C7 /* MenuLateralViewController.swift */,
+				2DFDAD32235BE059001E65C7 /* SobreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				2D4C8D1423552DBC0032CE2E /* ListaViewController.swift in Sources */,
 				2D4C8CEB235219B50032CE2E /* ViewController.swift in Sources */,
 				2D4C8CE9235219B50032CE2E /* AppDelegate.swift in Sources */,
+				2DFDAD33235BE059001E65C7 /* SobreViewController.swift in Sources */,
 				2D4C8D1623552E550032CE2E /* DetalhesViewController.swift in Sources */,
 				2DFDAD2F235A7E85001E65C7 /* MenuLateralViewController.swift in Sources */,
 				2DFDAD2B2359317E001E65C7 /* UIViewExtension.swift in Sources */,
